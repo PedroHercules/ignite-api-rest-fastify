@@ -14,3 +14,12 @@ app.register(cookie)
 app.register(transactionsRoutes, {
   prefix: 'transactions',
 })
+
+app.get('/', async () => {
+  return {
+    title: 'Ignite fastify transactions api',
+    description: 'Developed on nodejs track section 02',
+    version: '1.0.0',
+    date: '29/04/2023',
+  }
+})
